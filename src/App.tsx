@@ -1,8 +1,8 @@
-
-import RampLinkWebsite from './components/RampLinkWebsite'
+import Dashboard from './components/Dashboard'
 
 function App() {
-  return <RampLinkWebsite />
-}
+  return <Dashboard />
+  }
 
-export default App
+  export default App
+  

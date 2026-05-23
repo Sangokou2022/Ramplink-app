@@ -318,80 +318,12 @@ export default function RampLinkWebsite() {
             <h1 className="text-6xl font-black leading-tight">Modern Airport Dispatch & Ramp Management</h1>
             <p className="text-slate-300 text-lg mt-6 max-w-2xl">RampLink helps airport ramp teams manage flights, dispatch agents, coordinate operations and monitor airport activities in real time.</p>
             <div className="flex gap-4 mt-8">
-              <button onClick={() => setActivePage('dispatch')} className="bg-blue-600 hover:bg-blue-500 px-6 py-4 rounded-2xl font-bold transition shadow-2xl">
-                Launch Platform
-              </button>
-              <button className="border border-slate-700 hover:border-slate-500 px-6 py-4 rounded-2xl font-semibold transition">
-                Watch Demo
-              </button>
-            </div>
-          </div>
-          {/* Stats card */}
-          <div className="bg-slate-900/80 border border-slate-800 rounded-[2rem] p-6 shadow-2xl backdrop-blur">
-            <div className="grid grid-cols-2 gap-4">
-              {[['Flights Managed','120+'],['Ramp Agents','80'],['Dispatch Accuracy','98%'],['Airports','5']].map(([label,val])=>(
-                <div key={label} className="bg-slate-800 rounded-2xl p-5">
-                  <p className="text-slate-400">{label}</p>
-                  <h2 className="text-4xl font-bold mt-2">{val}</h2>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="p-6">
-        <div className="max-w-7xl mx-auto space-y-6">
-          {/* Features */}
-          <section id="features" className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            {[['Active Flights','28'],['Agents On Duty','42'],['Delayed Flights','3'],['Current Shift','15H - 00H']].map(([label,val])=>(
-              <div key={label} className="bg-slate-900 rounded-3xl p-5 shadow-xl border border-slate-800">
-                <p className="text-slate-400">{label}</p>
-                <h2 className="text-4xl font-bold mt-2">{val}</h2>
-              </div>
-            ))}
-          </section>
-
-          {/* Operations - Live Flights + Team */}
-          <section id="operations" className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="lg:col-span-2 bg-slate-900 rounded-3xl p-6 border border-slate-800 shadow-xl">
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl font-bold">Live Flights</h2>
-                <input type="text" placeholder="Search flight" className="bg-slate-800 border border-slate-700 rounded-xl px-4 py-2 text-sm outline-none focus:border-blue-500" />
-              </div>
-              <div className="space-y-4">
-                {flights.map((flight, index) => (
-                  <div key={index} className="bg-slate-800 rounded-2xl p-4 flex justify-between items-center">
-                    <div>
-                      <h3 className="text-xl font-semibold">{flight.code}</h3>
-                      <p className="text-slate-400">Gate {flight.gate}</p>
-                    </div>
-                    <div className="text-right">
-                      <p className={`font-semibold ${flight.status==='Delayed'?'text-red-400':flight.status==='Boarding'?'text-green-400':'text-blue-400'}`}>{flight.status}</p>
-                      <p className="text-slate-400">{flight.time}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div id="team" className="bg-slate-900 rounded-3xl p-6 border border-slate-800 shadow-xl">
-              <h2 className="text-2xl font-bold mb-6">Ramp Team</h2>
-              <div className="space-y-4">
-                {agents.map((agent, index) => (
-                  <div key={index} className="bg-slate-800 rounded-2xl p-4">
-                    <h3 className="font-semibold text-lg">{agent.name}</h3>
-                    <p className="text-slate-400">{agent.role}</p>
-                    <p className="mt-2 text-sm bg-blue-600 inline-block px-3 py-1 rounded-full">{agent.shift}</p>
-                  </div>
-                ))}
-              </div>
+              <button         </div>
             </div>
           </section>
 
           {/* CTA Dispatch */}
           <section className="bg-gradient-to-r from-blue-700 to-slate-900 rounded-3xl p-8 shadow-2xl">
-            <div className="flex flex-col items-start gap-4">
               <div>
                 <h2 className="text-3xl font-bold">Airport Operations in Real Time</h2>
                 <p className="text-slate-200 mt-2 max-w-2xl">Manage dispatch teams, track flights, monitor delays, and coordinate airport ramp operations from a single platform.</p>
